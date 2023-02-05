@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<title>Donate!!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous"
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+
+<style>
+
+.bg-img{
+
+  background: url(/images/collabo.jpg) top ;
+  /* background-position: center;  */
+  background-size: cover;
+  box-shadow: 0 3000px rgba(0, 0, 0, 0.6) inset;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+
+.myForm {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 0.8em;
+  margin-top: 50px;
+  width: 20em;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+/* .myForm * {
+  box-sizing: border-box;
+} */
+
+.myForm fieldset {
+  border: none;
+  padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+  padding: 0;
+  font-weight: bold;
+}
+
+.myForm label.choice {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-family: "Lucida Sans Unicode", "Lucida Grande",sans-serif;
+  font-size: 0.9em;
+  padding: 0.3em;
+}
+
+.myForm textarea {
+  height: 300px;
+}
+
+.myForm button {
+  padding: 1em;
+  border-radius: 0.5em;
+  background: #eee;
+  border: none;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.myForm button:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+</style>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top" style="z-index:8;">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide">MyAlly</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="/homepage.html" class="w3-bar-item w3-button"> HOME</a>
+            <a href="/connect.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> CONNECT</a>
+            <a href="/" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUPPORT</a>
+            <a href="/donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+            <a href="/login.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+  </div>
+
+<div class="bg-img">
+  <br></br>
+  <br></br>
+  <form style="padding-top: 50px; margin-left: 450px; background-color:white; width:max-content;"class="myForm" method="get" action="/html/codes/html_form_handler.cfm">
+    <p>
+      <label>Name
+        <input style="width:60vh;" type="text" name="customer_name" required>
+      </label> 
+    </p>
+
+    <p>
+      <label>Phone 
+        <input style="width:60vh;" type="tel" name="phone_number">
+      </label>
+    </p>
+
+    <p>
+      <label>Email 
+        <input style="width:60vh;" type="email" name="email_address">
+      </label>
+    </p>
+
+    <p>
+      <label style="width:60vh;">Which Organisation do you want to donate to?
+        <select id="Org_Name" name="Org_Name">
+          <option value="" selected="selected">Select One</option>
+          <option value="RTC" >RTC</option>
+          <option value="SWE" >SWE</option>
+          <option value="AnitaB.org" >AnitaB.org</option>
+          <option value="Girls Who Code" >Girls Who Code</option>
+          <option value="Black Girls Code" >Black Girls Code</option>
+          <option value="Management Leadership of Tomorrow" >Management Leadership of Tomorrow</option>
+          <option value="National society of Black Engineers" >National society of Black Engineers</option>
+          <option value="Society of Hispanic Professional Engineers" >Society of Hispanic Professional Engineers</option>
+          <option value="All Star Code" >All Star Code</option>
+          <option value="Harvard WEcode" >Harvard WEcode</option>
+          <option value="Women in Technology" >Women in Technology</option>
+          <option value="Code 2040" >Code 2040</option>
+          
+        </select>
+      </label> 
+    </p>
+
+      <p>
+      <label style="width:60vh;">Custom Amount
+        <input type="text" name="Amount" required>
+      </label> 
+    </p>
+
+
+    <p>
+      <label style="width:60vh;">Select Payment Mode
+        <input type="text" name="Payment Mode" required list="Banks">
+        <br></br>
+        <img src="images/card_img.png" alt="">
+      </label>
+      
+
+      <datalist id="Banks">
+        <option value="Venmo">
+        <option value="Paypal">
+        <option value="Debit Card">
+        <option value="Credit Card">
+      </datalist>
+    </p>
+
+    <p>
+      <label style="width:60vh;">Message
+        <textarea name="comments" maxlength="500"></textarea>
+      </label>
+    </p>
+
+    <p><button>Submit</button></p>
+
+  </form>
+</div>
+</body>
+</html>
+

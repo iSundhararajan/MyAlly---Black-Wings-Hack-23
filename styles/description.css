@@ -1,0 +1,73 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.bgimg-1 {
+
+    /* margin-top:10vh; */
+    /* background-position: center; */
+    top:-20px;
+    background-size: cover;
+    background-image: url("/images/RWC\ logo.jpg");
+    min-height: 90%;
+
+}
+
+#bannerimage {
+    width: 100%;
+    background-image: url("/images/Rewriting-the-Code-Logo.png");
+    height: 405px;
+    background-repeat: no-repeat;
+    /* background-color: purple; */
+    background-position: center;
+  }
+
+
+
+  .box {
+    transition: box-shadow .3s;
+    background-color: white;
+    border: 1px solid #ccc;
+    float: left;
+    
+  }
+
+
+#my_button{
+    border-color: black;
+    background-color:black;
+}
+
+#my_button:hover{
+    background-color: black;
+    outline: black;
+    color: white;
+}
+
+#about_card{
+    width:1000px;
+    margin-left: 80px;
+    margin-top:20px;
+}
+
+.box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+  
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 50%;
+}
