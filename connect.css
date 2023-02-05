@@ -1,0 +1,78 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+
+  margin-top:10vh;
+  /* background-position: center; */
+  background-size: cover;
+  background-image: url("/images/women-at-the-meeting.jpg");
+  min-height: 90%;
+  box-shadow: 0 3000px rgba(0, 0, 0, 0.6) inset;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+#background-tint {
+    background-color: rgba(46, 43, 43, 0);
+    background-blend-mode: multiply;
+}
+
+#my_button{
+    border-color: black;
+    color:black;
+}
+
+#my_button:hover{
+    background-color: black;
+    outline: black;
+    color: white;
+}
+
+.input-group{
+    width: 120vh;
+    display: flex;
+    align-content: center;
+}
+
+.w3-center {
+    text-align: center!important;
+    display: flex;
+    justify-content: center;
+}
+
+#broken_link{
+    text-decoration: none;
+    color: black;
+}
+
+.box {
+    transition: box-shadow .3s;
+ 
+    border: 1px solid #ccc;
+    float: left;
+    
+  }
+
+
+.col-md-4 {
+    /* flex: 0 0 auto; */
+    width: 15%;
+}
+
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 85%;
+}
+
+
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}

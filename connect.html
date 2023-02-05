@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous"
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="/connect.css"/>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+    <div class="w3-top" style="z-index:8;">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">MyAlly</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button"> HOME</a>
+                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> CONNECT</a>
+                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUPPORT</a>
+                <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">CONNECT</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">SUPPORT</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+    </nav>
+
+<!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container" id="home" >
+            <div class="w3-display-left w3-text-white" style="padding:48px">
+                <span class="w3-jumbo w3-hide-small">Find Your Community </span><br>
+                <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+                <span class="w3-large">MyAlly provides you a one-step access to a variety of organizations thats support and uplift women and people of color in the world of technology. Get started here and find your right fit. Learn more about these organizations that create a space for people of color to find their community while growing in their skillset and experiences.</span>
+                <br></br>
+                <br></br>
+                <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started Now</a></p>
+            </div> 
+       
+    </header>
+
+<!-- About Section -->
+    <div class="w3-container" style="padding:80px 16px" id="about">
+        <h3 class="w3-center">Search For an organiztaion here</h3>
+        <br></br>
+        <div class="w3-center">
+            <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search by Name" aria-label="Search" aria-describedby="search-addon" />
+                <button id="my_button" type="button" class="btn btn-outline-primary">search</button>
+            </div>
+        </div>
+
+        <!-- All Star Code -->
+        <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="/images/allstar.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:95px; width:100px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">All Star Code</h5>
+                        <p class="card-text">
+                            All Star Code creates economic opportunity for young men of color by developing an entrepreneurial mindset and supplying them with the tools they need to succeed in the innovation economy.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+         <!--Anita Borg Institute -->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/anitab_org.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:95px; width:100px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Anita Borg Institute</h5>
+                        <p class="card-text" >
+                            AnitaB.org provides women and non-binary technologists with year-round opportunities to connect with and inspire one another, develop their professional skills, find mentors, and gain recognition. 
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+
+         <!--Black Girls Code -->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/blackgirlscode.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:95px; width:100px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Black Girls Code</h5>
+                        <p class="card-text" >
+                            Black Girls Code builds pathways for young women of color to embrace the current tech marketplace as builders and creators by introducing them to skills in computer programming and technology.
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <!--Code 2040 -->
+        <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/code2040.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="margin-top:40px; height:30px; width:120px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Code 2040</h5>
+                        <p class="card-text" >
+                            Code 2040's programming is focused on supporting early-career tech talent, from college and graduate-level computer science students to Black & Latinx technologists navigating their first jobs.  
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Girls Who Code -->
+        <div class="box" class="card mb-3" style="max-height:100px; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="/images/GWC_SEO_Logo.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:100px; width:100px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Girls Who Code</h5>
+                        <p class="card-text">
+                            Girls Who Code values diversity, equity and inclusion as essential to our mission. We focus our work not only on gender diversity but also on young women who are historically underrepresented in computer science fields.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+
+         <!--Harvard WEcode-->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/harvardwecode.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:95px; width:100px; margin-left:5px;margin-top: 20px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Harvard WEcode</h5>
+                        <p class="card-text" >
+                            Harvard WECode (Women Engineers Code) is a global community of technical leaders aiming to foster a network among engineers, and promote greater representation in the technical industry by those who have been traditionally marginalized. 
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+
+         <!--MLT-->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/MLT-logo.jpg"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="margin-left:5px; margin-top:5px; height:90px; width:100px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Management Leadership of Tomorrow</h5>
+                        <p class="card-text" >
+                            MLT equips and emboldens high-achieving individuals from underrepresented communities—Black, Latinx, and Native American—to realize their full potential, to make a mark, and make a difference. 
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+         <!--NSBE-->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/NSBElogo.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="margin-top:10px; height:100px; width:100px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">National Society of Black Engineers</h5>
+                        <p class="card-text" >
+                            The National Society of Black Engineers (NSBE) is one of the largest student governed organizations in the world. NSBE members, chapters, and supporters are dedicated to increasing the number of culturally responsible Black Engineers who excel academically, succeed professionally and positively impact the community. 
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+         <!--Rewriting the Code-->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/RTC_share.jpg"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:142px; width:142px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Rewriting the Code</h5>
+                        <p class="card-text" >
+                            Rewriting the Code supports and empowers college, graduate and early career women in tech, through intersectional communities, mentorship, industry experience and educational resources, to become the next generation of engineers and tech leaders.
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Society of Hispanic Professional engineers-->
+        <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/shpepagelogo.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:95px; margin-top: 20px; width:100px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Society of Hispanic Professional Engineers
+                        </h5>
+                        <p class="card-text" >
+                            SHPE consists of engineers, computer scientists, mathematicians, scientists, and more. They specialize in problem-solving through a unique and collective perspective and their stories of resilience, education, service, and above all, familia, are the embodiment of the next generation of STEM leadership!
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+         <!--Society of Women Engineers-->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/swelogo.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:60px; width:100px; margin-right: 0px; margin-top: 30px; margin-left: 10px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Society of Women Engineers</h5>
+                        <p class="card-text" >
+                            SWE empowers women to achieve their full potential in careers as engineers and leaders; expand the image of the engineering and technology professions as a positive force in improving the quality of life, and demonstrate the value of diversity and inclusion. 
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+         <!--Women in Technology -->
+         <div class="box" class="card mb-3" style="height:fit-content; width: 1000px; margin-top: 80px; margin-left: 160px; margin-right: 20px;">
+            <a id="broken_link" href="./connect.html">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                    src="images/WITlogo.jpg"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"
+                    style="height:120px; width:120px; margin-right: 0px; padding-right: 0px;"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" >
+                        <h5 class="card-title">Women in Technology (WIT) </h5>
+                        <p class="card-text" >
+                            WIT has the sole aim of advancing women in technology. WIT meets its vision through a variety of leadership development, technology education, networking and mentoring opportunities for women at all levels of their careers.
+                    </div>
+                </div>
+                </div>
+            </a>
+        </div>
+
+       
+        
+
+    </div>
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  
+   <p class="w3-small">© MyAlly 2023. All rights reserved.</p>
+   
+  </footer>
+
+<script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+ 
+<!-- <script>
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script> -->
+
+</body>
+</html>
